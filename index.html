@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather app</title>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Weather app</h1>
+      <br />
+      <div class="firstbox">
+        <div class="card" style="width: 9rem">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Weather</strong></li>
+            <li class="list-group-item">Mostly Cloudy</li>
+            <li class="list-group-item">Sunday</li>
+          </ul>
+        </div>
+      </div>
+      <br />
+
+      <div class="secondbox">
+        <div class="card" style="width: 9rem">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Choose area</li>
+            <li class="list-group-item">
+              <form id="search-text-input" action="/">
+                <input
+                  type="text"
+                  name="location"
+                  placeholder="Enter city"
+                  autocomplete="off"
+                  autofocus="on"
+                  style="width: 7rem"
+                />
+                <input type="submit" value="Search" />
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="centrebox">
+        <div class="card text-center" style="width: 18rem">
+          <div class="card-header"><span class="temperature" id="temperature">Temperature in</span><span class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a></div>
+          <div class="card-body">
+            <h5 class="card-title">14°</h5>
+            <p class="card-text-city">Birmingham</p>
+          </div>
+          <div class="card-footer text-body-secondary">Today</div>
+        </div>
+      </div>
+      <br />
+      
+      
+<div class="card-container">
+      <div class="row">
+          <div class="col-2">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">18°</h5>
+                <p class="card-text">Mon</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">18°</h5>
+                <p class="card-text">Tues</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">18°</h5>
+                <p class="card-text">Wed</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">18°</h5>
+                <p class="card-text">Thur</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">18°</h5>
+                <p class="card-text">Fri</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+      <p>Coded by Sophie Rowson</p>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

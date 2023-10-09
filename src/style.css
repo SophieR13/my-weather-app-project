@@ -1,0 +1,42 @@
+p {
+  text-align: center;
+  padding: 0px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 20px;
+  font-style: Helvetica;
+  width: 50%;
+}
+
+.box {
+  border: 4px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: white;
+  width: 1000px;
+  margin: auto;
+  line-height: 22px;
+}
+
+.card {
+  width: 100px;
+  left: 50px;
+}
+
+.firstbox {
+  position: relative;
+  left: 30px;
+}
+
+.secondbox {
+  position: relative;
+  left: 750px;
+  top: -150px;
+}
+
+.centrebox {
+  position: relative;
+  left: 300px;
+  top: -70px;
+}
