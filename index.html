@@ -32,16 +32,11 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Choose area</li>
             <li class="list-group-item">
-              <form id="search-text-input" action="/">
-                <input
-                  type="text"
-                  name="location"
-                  placeholder="Enter city"
-                  autocomplete="off"
-                  autofocus="on"
-                  style="width: 7rem"
+              <form id="search-form">
+                <input type="search" placeholder="Type a city.." class="form-control" id="city-input" autocomplete="off"
                 />
-                <input type="submit" value="Search" />
+                <br>
+                <input type="submit" value="Search" class="btn btn-primary w-110"/>
               </form>
             </li>
           </ul>
