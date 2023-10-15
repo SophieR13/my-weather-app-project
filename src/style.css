@@ -18,8 +18,8 @@ p {
   border-radius: 20px;
   padding: 5px;
   background-color: white;
-  width: 1000px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 0 auto;
   line-height: 22px;
 }
 
@@ -43,6 +43,7 @@ p {
   position: relative;
   left: 300px;
   top: -200px;
+  text-transform: capitalize;
 }
 
 .card-container {

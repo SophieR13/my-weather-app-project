@@ -20,8 +20,8 @@
         <div class="card" style="width: 9rem">
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><strong>Precipitation:</strong> 0%</li>
-            <li class="list-group-item"><strong>Humidity:</strong> 73%</li>
-            <li class="list-group-item"><strong>Wind:</strong> 2 km/h</li>
+            <li class="list-group-item"><strong>Humidity:</strong> <span id="humidity">73%</span></li>
+            <li class="list-group-item"><strong>Wind:</strong> <span id="wind"></span> km/h</li>
           </ul>
         </div>
       </div>
@@ -50,15 +50,15 @@
 
       <div class="centrebox">
         <div class="card text-center" style="width: 18rem">
-          <div class="card-header"><span class="temperature" id="temperature">Temperature in</span><span class="units">
+          <div class="card-header"><span class="unit" id="units">Temperature in</span><span class="units">
             <a href="#" id="celsius-link">°C</a> |
             <a href="#" id="fahrenheit-link">°F</a></div>
           <div class="card-body">
-            <h5 class="card-title">14°</h5>
-            <p class="card-text-city">Birmingham</p>
-            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear"
-          </div>
-          <div class="card-footer text-body-secondary">Clear</div>
+            <h5 class="card-title" id="temperature">°</h5>
+            <p class="card-text-city" id="city">Birmingham</p>
+            <div class="d-flex weather-temperature"></div>
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear"/>
+          <div class="card-footer text-body-secondary" id="description"></div>
         </div>
       </div>
       <br />
@@ -71,6 +71,7 @@
               <div class="card-body">
                 <h5 class="card-title">18°</h5>
                 <p class="card-text">Mon</p>
+                
               </div>
             </div>
           </div>
