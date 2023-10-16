@@ -51,3 +51,32 @@ p {
   left: -270px;
   top: 100px;
 }
+
+.card-header .active {
+  color: black;
+  cursor: default;
+}
+
+.card-header .active:hover {
+  text-decoration: none;
+}
+
+.fahrenheit-link .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.fahrenheit-link .active:hover {
+  text-decoration: none;
+}
+
+.celsius-link .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.celsius-link .active:hover {
+  text-decoration: none;
+}
