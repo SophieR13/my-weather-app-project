@@ -109,6 +109,7 @@ p {
 .col {
   display: inline-block;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .signature {
