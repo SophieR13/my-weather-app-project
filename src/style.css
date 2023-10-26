@@ -115,6 +115,7 @@ p {
 .signature {
   padding: 100px;
   position: relative;
-  left: 100px;
+  top: -100px;
+  left: -500px;
   text-align: center;
 }
