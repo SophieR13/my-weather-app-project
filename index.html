@@ -32,9 +32,9 @@
             <li class="list-group-item">Choose area</li>
             <li class="list-group-item">
                 <form id="search-form">
-                    <input type="search" placeholder="Enter city" class="form-control" id="city-input" autocomplete="off" />
+                    <input type="text" placeholder="Enter city" class="form-control" id="city-input" autocomplete="off" />
                     <br />
-                    <input type="submit" value="Search" class="btn btn-primary w-100"/>
+                    <input type="submit" value="Search" class="btn btn-primary w-100" name="city-input"/>
                 </form>
             </li>
         </ul>
@@ -45,8 +45,8 @@
         <div class="card text-center" style="width: 18rem">
           <div class="card-header" id="weather-temperature">
             <span class="unit">Temperature: <span id="temperature"></span><span class="units">
-            <a href="#" id="celsius-link" class="active">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a></div>
+            °C</a>
+            </div>
             </span></span>
           <div class="card-body">
             <h5 class="card-title"><span id="date"></span></h5>
