@@ -38,7 +38,7 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row">`;
 
   forecast.forEach(function (forecastDay, index) {
-    if (index < 4) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `
@@ -54,7 +54,7 @@ function displayForecast(response) {
                   forecastDay.condition.icon
                 }.png" alt="" width="42" />
                 <div class="weather-forecast-temperatures">
-                  <span class="weather-forecase-temperature-max"> ${Math.round(
+                  <span class="weather-forecast-temperature-max"> ${Math.round(
                     forecastDay.temperature.minimum
                   )}°</span>
                   <span class="weather-forecast-temperature-min"> ${Math.round(
@@ -75,11 +75,9 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "d9accof3b38dc4420097tf7819c5b0b6";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
 
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -92,7 +90,7 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-  celsiusTemperature = response.data.temperature.current;
+  let celsiusTemperature = response.data.temperature.current;
 
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
@@ -150,4 +148,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("New York");
-displayForecast();
